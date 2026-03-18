@@ -8,7 +8,7 @@
 <body>
 
 <div id="app">
-    <index-page></index-page>
+    <!-- <index-page></index-page> -->
 </div>
 
 </body>
