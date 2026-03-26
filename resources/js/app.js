@@ -1,9 +1,6 @@
 import './bootstrap';
 
 import { createApp } from 'vue';
-import { createPinia } from 'pinia' //store
-
-
 /////////////////  without use Router  ///////////////////
 
 // import IndexPage from './components/IndexPage.vue'
@@ -18,5 +15,9 @@ import { createPinia } from 'pinia' //store
 /////////////////  use with Router  /////////////////// 
 import App from './components/layouts/App.vue'
 import router from './router'
+import { createPinia } from 'pinia' //store
+import axios from 'axios'
+
+axios.defaults.baseURL = 'http://127.0.0.1:8000/api'
 
 createApp(App).use(createPinia()).use(router).mount('#app')
